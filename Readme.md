@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Кристина Ковальчук](https://up.htmlacademy.ru/htmlcss/24/user/978019).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
