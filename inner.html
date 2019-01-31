@@ -7,20 +7,21 @@
   <body>
   	<header class="main-header">
       <a class="main-header-logo" href="index.html">
-  	    <img class="logo-header" src="device-logo.svg" alt="Логотип сайта">
+  	    <img class="logo-header" src="svg/logo-device.svg" width="163" height="65" alt="Логотип сайта">
       </a>
   	  <form>
+        <img class="search" src="svg/search.svg">
         <input type="text" placeholder="Поиск по сайту">
         <button type="submit"></button>
       </form>	
   	  <nav class="main-navigation">
   	  	<ul class="user-navigation">
-  	  	  <li class="login-link">Вход</li>
-  	  	  <li class="compare-link">Сравнить</li>
-  	  	  <li class="basket-link">Корзина</li>	
+  	  	  <li class="login-link"><img class="entrance" src="svg/user.svg">Выйти</li>
+  	  	  <li class="compare-link"><img class="compare" src="svg/compare.svg">Сравнить</li>
+  	  	  <li class="basket-link"><img class="cart" src="svg/cart.svg">Корзина</li>	
   	  	</ul>
   	  	<ul class="site-navigation">
-  	  	   <li><a href="catalog.html">Каталог товаров</a></li>
+  	  	   <li><a href="catalog.html">Каталог товаров <img class="catalog-plus" src="svg/plus.svg"></a></li>
   	  	   <li><a href="delivery.html">Доставка</a></li>
   	  	   <li><a href="guarantee.html">Гарантия</a></li>	
   	  	   <li><a href="contacts.html">Контакты</a></li>	
@@ -37,6 +38,21 @@
        <section class="filters">
          <h2 class="visually-hidden">Фильтр товаров</h2>
          <!-- Здесь будет форма -->
+         <ul class="colors">
+            <span>Цвет</span>
+            <li><img class="color" src="svg/checkbox-on.svg"> Черный</li>
+            <li><img class="color" src="svg/checkbox-off.svg">Белый</li>
+            <li><img class="color" src="svg/checkbox-on.svg">Синий</li>
+            <li><img class="color" src="svg/checkbox-on.svg">Красный</li>
+            <li><img class="color" src="svg/checkbox-off.svg">Розовый</li>
+         </ul>
+         <div class="bluetooth">
+            <span>Bluetooth</span>
+            <img class="radio" src="svg/radio-on.svg">
+            <input type="radio" name="bluetooth" value="yes">Есть
+            <img class="radio" src="svg/radio-off.svg">
+            <input type="radio" name="bluetooth" value="no">Нет
+         </div>
        </section>
        <section class="catalog">
          <h2 class="visually-hidden">Список селфи</h2>
@@ -47,7 +63,7 @@
                  <a href="catalog-item.html">Любительская селфи-палка</a>
                </h1>
                <a href="catalog-item.html">
-                 <img src="img/item-1-jpg.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                 <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                </a>  
                <span>500 руб.</span>
              </article>
@@ -58,7 +74,7 @@
                  <a href="catalog-item.html">Профессиональная селфи-палка</a>
                </h1>
                <a href="catalog-item.html">
-                 <img src="img/item-2-jpg.jpg" width="360" height="380 alt="Профессиональная селфи-палка">
+                 <img src="img/item-2.jpg" width="360" height="380 alt="Профессиональная селфи-палка">
                </a>  
                <span>1 500 руб.</span>
               </article>>
@@ -69,7 +85,7 @@
                  <a href="catalog-item.html">Непотопляемая селфи-палка</a>
                </h1>
                <a href="catalog-item.html">
-                 <img src="img/item-3-jpg.jpg" width="360" height="380 alt="Непотопляемая селфи-палка">
+                 <img src="img/item-3.jpg" width="360" height="380 alt="Непотопляемая селфи-палка">
                </a>  
                <span>2 500 руб.</span>
              </article>>
@@ -80,7 +96,7 @@
                  <a href="catalog-item.html">Селфи-палка "Следуй за мной"</a>
                </h1>
                <a href="catalog-item.html">
-                 <img src="img/item-4-jpg.jpg" width="360" height="380 alt="Селфи-палка "Следуй за мной"">
+                 <img src="img/item-4.jpg" width="360" height="380 alt="Селфи-палка "Следуй за мной"">
                </a>  
                <span>4 900 руб.</span>
              </article>  
@@ -91,7 +107,7 @@
     <footer class="main-footer">
       <div class="footer-logo">
         <a href="index.html">
-          <img class="logo-footer" src="device-logo.svg" alt="Логотип сайта">
+           <img class="logo-footer" src="svg/logo-device.svg" width="163" height="65" alt="Логотип сайта">
         </a>  
       </div>
       <div class="adress">
@@ -104,21 +120,24 @@
             <li><a href="contacts.html">Контакты</a></li> 
           </ul>
           <ul class="user-navigation-footer">
-            <li class="login-link">Вход</li>
-            <li class="compare-link">Сравнить</li>
-            <li class="basket-link">Корзина</li>  
+            <li class="login-link"><img class="entrance" src="svg/user.svg">Вход</li>
+            <li class="compare-link"><img class="compare" src="svg/compare.svg">Сравнить</li>
+            <li class="basket-link"><img class="cart" src="svg/cart.svg">Корзина</li>  
           </ul>
         </nav>
         <div class="footer-social">
             <ul>
-              <li><a class="social-button" href="#">Фейсбук</a></li>
-              </li><a class="social-button" href="#">Инстаграм</a></li>
-              </li><a class="social-button" href="#">Твиттер</a></li>
+              <li><a class="social-button" href="#"><img class="social-button" src="svg/fb.svg" alt="Facebook">Facebook</a></li>
+              </li><a class="social-button" href="#"><img class="social-button" src="svg/instagram.svg">Instagram</a></li>
+              </li><a class="social-button" href="#"><img class="social-button" src="svg/twitter.svg">Twitter</a></li>
             </ul>
         </div>
         <div class="phone">
           <p>Тел:+7(495)495-95-95</p>
-        </div>   
+        </div> 
+        <div class="logo-html">
+           <img src="svg/logo-html.svg">  
+        </div>
     </footer>
   </body>
 </html>
