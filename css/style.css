@@ -1,70 +1,67 @@
-
+@font-face {
+	font-family: 'Gilroy-ExtraBold';
+	src: url('../fonts/gilroy-extrabold.woff2') format('woff2'),
+    url('../fonts/gilroy-extrabold.woff') format('woff');
+    font-weight: 400;			
+}
+@font-face {
+	font-family: 'Gilroy-ExtraBold';
+	src: url('../fonts/gilroy-extrabold.woff2') format('woff2'),
+    url('../fonts/gilroy-extrabold.woff') format('woff');
+    font-weight: 700;			
+}
 body {
   margin: 0;
   padding: 0;
-
-  font-family: "Gilroy-ExtraBold", Arial, sans-serif;
-  color: #464646;
-  text-transform: uppercase;
   width: 1440px;
   height: 2795px;
+  font-family: "Gilroy-ExtraBold", Arial, sans-serif;
   background-color: #ffffff;
 }
-
-
 a {
   text-decoration: none;
 }
-
-.main-navigation {
+.main-header {
   width: 1160px;
   height: 299px;
-  opacity: 0.5;
-  background-color: #f0c52e;
+  color: #000000;
+  background-color: rgba(240, 197, 46, 0.5);
 }
-
-.site-navigation,
-.user-navigation,
-.site-navigation-footer,
-.user-navigation-footer {
-  list-style: none;
-}
-
 .site-navigation a,
 .user-navigation a {
   color: #000000
 }
-
 .site-navigation a:hover,
 .user-navigation a:hover {
 color: rgba(0, 0, 0, 0.6);
 }
-
 .site-navigation a:focus,
 .user-navigation a:focus {
 color: rgba(0, 0, 0, 0.34);
 }
-
 .user-navigation {
-  font-family: OpenSans;	
-  font-size: 15px;
-  font-weight: 800;
-  font-style: normal;
-  line-height: 1.33;
-  letter-spacing: 0.2px;
-  color: #000000;
-}
-
-.site-navigation {
+  font-family: "OpenSans-Light", Arial, sans-serif;	
   font-size: 15px;
   font-weight: 300;
   font-style: normal;
+  font-stretch: normal;
   line-height: 2;
-  letter-spacing: 3.6px;
+  letter-spacing: 0.2px;
   color: #000000;
+  list-style: none;
 }
-
-.about-us .contacts h2 {
+.site-navigation {
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #000000;
+  list-style: none;
+}
+h2 {
   font-size: 47px;
   font-weight: 800;
   font-style: normal;
@@ -74,58 +71,59 @@ color: rgba(0, 0, 0, 0.34);
   text-align: left;
   color: #000000;
 }
-
-.about-us .contacts p {
-  font-family: OpenSans;
+p {
+  font-family: "OpenSans-Light", Arial, sans-serif;
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  line-height: 30px;
+  line-height: 2;
+  letter-spacing: normal;
   text-align: left;
   color: #464646;
 }
-
 .about-us ul {
   font-size: 16px;
   font-weight: 800;
   font-style: normal;
   font-stretch: normal;
-  line-height: 40px;
+  line-height: 2.5;
   text-align: left;
   color: #000000;
   list-style: none;
 }
-
 .button {
   width: 260px;
   height: 8px;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: center;
   background-color: #f0c52e;
   letter-spacing: 3.6px;
-  color: #000000
+  text-transform: uppercase;
+  color: #000000;
 }
-
 .button :hover {
 width: 220px;
 height: 40px;
 }
-
 .button :focus {
  width: 220px;
  height: 40px;
 }
-
 .main-footer {
   width: 1440px;
   height: 323px;
   background-color: #464646;
 }
-
 .site-navigation-footer a,
 .user-navigation-footer a {
 	color: #ffffff;
 }
-
 .site-navigation-footer {
   font-size: 18px;
   font-weight: 800;
@@ -134,22 +132,20 @@ height: 40px;
   line-height: 1.33;
   letter-spacing: 3.6px;
   text-align: left;
+  list-style: none;
   color: #ffffff;
 }
-
 .site-navigation-footer a:hover {
 color: rgba(255, 255, 255, 0.6);
 opacity: 0.6;
 }
-
 .site-navigation-footer a:focus {
 color: rgba(255, 255, 255, 0.3);
 opacity: 0.3;
 }
-
 .user-navigation-footer {
   opacity: 0.7;
-  font-family: OpenSans;
+  font-family: "OpenSans-Light", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   font-style: normal;
@@ -157,20 +153,18 @@ opacity: 0.3;
   line-height: 2.4;
   letter-spacing: 0.2px;
   text-align: left;
+  list-style: none;
   color: rgba(255, 255, 255, 0.7);
 }
-
 .user-navigation-footer a:hover {
 color: #ffffff;
 }
-
 .user-navigation-footer a:focus {
 color: rgba(255, 255, 255, 0.3);
 opacity: 0.3;
 }
-
-.adress {
-  font-family: OpenSans;
+.adress p {
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   font-style: normal;
@@ -180,9 +174,8 @@ opacity: 0.3;
   text-align: left;
   color: #ffffff;
 }
-
 .phone a {
-  font-family: OpenSans;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   font-style: normal;
@@ -192,15 +185,124 @@ opacity: 0.3;
   color: #ffffff;
 }
 
+.main-header-inner {
+  width: 1160px;
+  height: 266px;
+  color: #000000;
+  background-color: rgba(240, 197, 46, 0.5);
+}
+.page-title {
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.02;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #000000;
+}
+.breadcrumbs {
+  list-style: none;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+}
+.breadcrumbs a {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.3);
+}
 
+.breadcrumbs a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+.breadcrumbs a:focus {
+	color: rgba(0, 0, 0, 0.1);
+}
 
-@font-face {
-
-	font-family: 'Gilroy-ExtraBold';
-	src: url('../fonts/gilroy-extrabold.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/gilroy-extrabold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/gilroy-extrabold.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/gilroy-extrabold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/gilroy-extrabold.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/gilroy-extrabold.svg#gilroy-extrabold') format('svg'); /* Chrome < 4, Legacy iOS */
+.breadcrumbs-current {
+  color: #aba9a7;
+}
+.filter fieldset {
+  border: none;
+}
+.filter legend {
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+}
+.colors-choice {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.86;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #000000;
+  list-style: none;
+ }
+}
+.filters ul {
+  list-style: none;
+  line-height: 2.86;
+}
+.filter-input:disabled {
+  color: #a6a6a6;
+}
+.bluetooth {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.86;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #000000;
+  list-style: none;
+ }
+.bluetooth-choice:hover + label,
+.bluetooth-choice:focus + label {
+  color: #000000;
+}
+.bluetooth-choice:disabled + label {
+  color: #a6a6a6;
+}
+.catalog-list {
+  list-style: none;
+}
+.catalog-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.catalog-item a{
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+}
+.catalog-item span{
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  text-align: right;
+  color: #464646;
 }

@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  	<header class="main-header">
+  	<header class="main-header-inner">
       <a class="main-header-logo" href="index.html">
   	    <img class="logo-header" src="img/logo-device.svg" width="163" height="65" alt="Логотип сайта">
       </a>
@@ -41,7 +41,7 @@
          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Цвет</legend>
-              <ul>
+              <ul class="colors-choice">
                 <li class="filter-color">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" checked>
                   <img class="color" src="img/checkbox-on.svg"> Черный   
@@ -66,13 +66,13 @@
             </fieldset>
             <fieldset>
               <legend>Bluetooth</legend>
-              <ul>
-                <li class="bluetooth">
+              <ul class="bluetooth">
+                <li class="bluetooth-choice">
                   <label for="bluetooth-choice-yes"></label>
                   <img class="radio" src="img/radio-on.svg">
                   <input type="radio" id="bluetooth-choice-yes" name="bluetooth" value="yes">Есть   
                 </li>
-                <li>
+                <li class="bluetooth-choice">
                   <label for="bluetooth-choice-no"></label>
                   <img class="radio" src="img/radio-off.svg">
                   <input type="radio" id="bluetooth-choice-no" name="bluetooth" value="no">Нет
@@ -87,45 +87,45 @@
          <ul class="catalog-list">
            <li class="catalog-item">
              <article class="product">
-               <h1>
-                 <a href="catalog-item.html">Любительская селфи-палка</a>
-               </h1>
                <a href="catalog-item.html">
                  <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-               </a>  
+               </a> 
+               <h1>
+                 <a href="catalog-item.html">Любительская селфи-палка</a>
+               </h1> 
                <span>500 руб.</span>
              </article>
            </li>
            <li class="catalog-item">
              <article class="product">
-               <h1>
-                 <a href="catalog-item.html">Профессиональная селфи-палка</a>
-               </h1>
                <a href="catalog-item.html">
                  <img src="img/item-2.jpg" width="360" height="380 alt="Профессиональная селфи-палка">
                </a>  
+               <h1>
+                 <a href="catalog-item.html">Профессиональная селфи-палка</a>
+               </h1>
                <span>1 500 руб.</span>
               </article>
            </li> 
            <li class="catalog-item">
              <article class="product">
-               <h1>
-                 <a href="catalog-item.html">Непотопляемая селфи-палка</a>
-               </h1>
                <a href="catalog-item.html">
                  <img src="img/item-3.jpg" width="360" height="380 alt="Непотопляемая селфи-палка">
-               </a>  
+               </a>
+                <h1>
+                 <a href="catalog-item.html">Непотопляемая селфи-палка</a>
+               </h1>  
                <span>2 500 руб.</span>
              </article>
            </li>
            <li class="catalog-item">
              <article class="product">
-               <h1>
-                 <a href="catalog-item.html">Селфи-палка "Следуй за мной"</a>
-               </h1>
                <a href="catalog-item.html">
                  <img src="img/item-4.jpg" width="360" height="380 alt="Селфи-палка "Следуй за мной"">
-               </a>  
+               </a> 
+               <h1>
+                 <a href="catalog-item.html">Селфи-палка "Следуй за мной"</a>
+               </h1> 
                <span>4 900 руб.</span>
              </article>  
            </li>
