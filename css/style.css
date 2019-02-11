@@ -26,9 +26,18 @@ a {
   height: 299px;
   color: #000000;
   background-color: rgba(240, 197, 46, 0.5);
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 0;
+  padding: 0 10px;
 }
+.header-logo {
+	width: 163px;
+	height: 35px;
+	}
 .site-navigation a,
-.user-navigation a {
+.user-navigation a,
+.container-search a {
   color: #000000
 }
 .site-navigation a:hover,
@@ -38,6 +47,29 @@ color: rgba(0, 0, 0, 0.6);
 .site-navigation a:focus,
 .user-navigation a:focus {
 color: rgba(0, 0, 0, 0.34);
+}
+.main-header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.container-search{
+	width: 350px;
+}
+.container-navigation{
+	width: 550px;
+}
+.container-search li{
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #000000;
+  list-style: none;
 }
 .user-navigation {
   font-family: "OpenSans", Arial, sans-serif;	
@@ -61,7 +93,21 @@ color: rgba(0, 0, 0, 0.34);
   color: #000000;
   list-style: none;
 }
-h2 {
+.container-about-us {
+  width: 1160px;	
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.about-us {
+	width: 490px;
+	margin-left: 10px;
+}
+.contacts {
+	width: 550px;
+}
+.about-us h2 {
   font-size: 47px;
   font-weight: 800;
   font-style: normal;
@@ -71,7 +117,28 @@ h2 {
   text-align: left;
   color: #000000;
 }
-p {
+.about-us p {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #464646;
+}
+.contacts h2 {
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.02;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #000000;
+}
+.contacts p {
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -118,7 +185,26 @@ height: 40px;
 .main-footer {
   width: 1440px;
   height: 323px;
+  padding: 60px 0;
+  margin-top: 80px;
   background-color: #464646;
+}
+.wrapper-footer {
+	width: 1160px;
+	padding: 0 10px;
+	margin: auto;
+	display: flex;
+    justify-content: space-between; 
+}
+.footer-container-first {
+	width: 260px;
+}
+.footer-container-second {
+	width: 430px;
+}
+}
+.footer-container-third {
+	width: 330px;
 }
 .site-navigation-footer a,
 .user-navigation-footer a {
@@ -134,6 +220,10 @@ height: 40px;
   text-align: left;
   list-style: none;
   color: #ffffff;
+  text-transform: uppercase;
+}
+.social-button {
+	list-style: none;
 }
 .site-navigation-footer a:hover {
 color: rgba(255, 255, 255, 0.6);
