@@ -21,33 +21,29 @@ body {
 a {
   text-decoration: none;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .main-header {
   width: 1160px;
   color: #000000;
   background-color: rgba(240, 197, 46, 0.5);
   margin: auto;
   margin-top: 40px;
-  padding: 20px;
-}
-.visually-hidden {
-	visibility: hidden;
-}
-.header-logo {
-	width: 163px;
-	height: 35px;
-	}
-.site-navigation a,
-.user-navigation a,
-.container-search a {
-  color: #000000
-}
-.site-navigation a:hover,
-.user-navigation a:hover {
-color: rgba(0, 0, 0, 0.6);
-}
-.site-navigation a:focus,
-.user-navigation a:focus {
-color: rgba(0, 0, 0, 0.34);
+  padding: 20px 40px;
 }
 .main-header-wrapper{
   display: flex;
@@ -55,11 +51,33 @@ color: rgba(0, 0, 0, 0.34);
   margin: 0;
   padding: 0;
 }
+.header-logo {
+   position: absolute;
+   width: 163px;
+   height: 35px;
+   top: 15px;
+   left: 190px;
+   padding: 0; 
+	}
+.search {
+  background-color: transparent;
+  border: none; 
+  outline: none;
+}
+.container-search a{
+	color: #000000;
+}
 .container-search{
+	display: block; 
 	width: 350px;
+	padding-left: 50px;
+}
+.catalog {
+	padding: 0;
+	padding-top: 30px;	
 }
 .container-navigation{
-	width: 550px;
+	width: 600px;
 }
 .container-search li{
   font-size: 18px;
@@ -71,6 +89,47 @@ color: rgba(0, 0, 0, 0.34);
   text-transform: uppercase;
   color: #000000;
   list-style: none;
+}	
+.header-svg {
+	padding: 0 10px; 
+}
+.catalog .header-svg {
+	opacity: 0.3; 
+}
+.site-navigation,	
+.user-navigation,
+.container-search {
+   display: flex;
+   flex-wrap: wrap;
+}
+.site-navigation a,
+.user-navigation a {
+   display: block; 
+   color: #000000;
+}
+.user-navigation a{
+   padding-bottom: 30px;
+   padding-left: 30px;
+   padding-right: 30px;
+}
+.user-navigation li:first-child a{
+   padding-right: 140px;
+   padding-left: 0px;
+}
+.site-navigation a {
+   padding-left: 0px;
+   padding-right: 30px;
+}
+.site-navigation li:last-child a{
+   padding-left: 50px;
+}
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.site-navigation a:focus,
+.user-navigation a:focus {
+  color: rgba(0, 0, 0, 0.34);
 }
 .user-navigation {
   font-family: "OpenSans", Arial, sans-serif;	
@@ -160,7 +219,8 @@ color: rgba(0, 0, 0, 0.34);
   color: #000000;
   list-style: none;
 }
-.button {
+.button-first,
+.button-second {
   width: 260px;
   height: 8px;
   font-size: 18px;
@@ -174,18 +234,42 @@ color: rgba(0, 0, 0, 0.34);
   letter-spacing: 3.6px;
   text-transform: uppercase;
   color: #000000;
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: 60px;
+  text-align: center;
 }
-.button:hover {
+.button-first::before {
+	content: "Подробнее о нас"; 
+	position: absolute;
+	top: -7px;
+	bottom: 2px;
+	left: 20px;
+}
+.button-second::before {
+	content: "Напишите нам"; 
+	position: absolute;
+	top: -7px;
+	bottom: 2px;
+	left: 40px;
+}
+.button-first:hover {
   width: 220px;
   height: 40px;
 }
-.button:focus {
+.button-second:hover {
+  width: 220px;
+  height: 40px;
+}
+.button-first:focus {
+  width: 220px;
+  height: 40px;
+}
+.button-second:focus {
   width: 220px;
   height: 40px;
 }
 .main-footer {
-  width: 1160px;
-  padding: 0px 20px;
   margin: auto;
   background-color: #464646;
 }
@@ -195,6 +279,16 @@ color: rgba(0, 0, 0, 0.34);
   margin: auto;
   display: flex;
   justify-content: space-between; 
+}
+.site-navigation-footer,	
+.user-navigation-footer {
+   display: flex;
+   flex-wrap: wrap;
+}
+.site-navigation-footer a,	
+.user-navigation-footer a{
+   display: block; 
+   vertical-align: middle;
 }
 .footer-container-first {
   width: 260px;	
@@ -224,6 +318,24 @@ color: rgba(0, 0, 0, 0.34);
 }
 .social-button {
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.3;
+}
+.footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 145px;
+  margin: 0 auto;
+  padding: 0;
+}
+.social-button:hover {
+  opacity: 0.6;
+}
+.social-button:focus {
+  opacity: 0.1;
 }
 .site-navigation-footer a:hover {
   color: rgba(255, 255, 255, 0.6);
