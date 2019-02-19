@@ -43,7 +43,7 @@ img {
   background-color: rgba(240, 197, 46, 0.5);
   margin: auto;
   margin-top: 40px;
-  padding: 20px 40px;
+  padding: 35px 50px;
 }
 .main-header-wrapper{
   display: flex;
@@ -55,29 +55,38 @@ img {
    position: absolute;
    width: 163px;
    height: 35px;
-   top: 15px;
-   left: 190px;
+   top: 18px;
+   left: 140px;
    padding: 0; 
 	}
 .search {
   background-color: transparent;
   border: none; 
   outline: none;
+  font-family: "OpenSans", Arial, sans-serif;	
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  opacity: 0.3;
 }
 .container-search a{
 	color: #000000;
 }
 .container-search{
 	display: block; 
-	width: 350px;
-	padding-left: 50px;
+	width: 400px;	
+	padding-right: 200px; 
 }
 .catalog {
 	padding: 0;
-	padding-top: 30px;	
+	margin: 0;
+	padding-right: 10px;
+	padding-top: 35px;
 }
 .container-navigation{
-	width: 600px;
+	width: 700px;
 }
 .container-search li{
   font-size: 18px;
@@ -90,11 +99,18 @@ img {
   color: #000000;
   list-style: none;
 }	
-.header-svg {
-	padding: 0 10px; 
+.header-svg,
+.footer-svg {
+	padding-right: 10px; 
 }
 .catalog .header-svg {
-	opacity: 0.3; 
+	opacity: 0.3;
+	padding-left: 10px; 
+}
+.user-navigation,
+.site-navigation {
+	padding: 0;
+	margin: 0;
 }
 .site-navigation,	
 .user-navigation,
@@ -108,20 +124,22 @@ img {
    color: #000000;
 }
 .user-navigation a{
-   padding-bottom: 30px;
+   padding: 0;
+   margin: 0;
    padding-left: 30px;
-   padding-right: 30px;
+   padding-right: 30px;  
 }
 .user-navigation li:first-child a{
-   padding-right: 140px;
+   padding-right: 200px;
    padding-left: 0px;
 }
 .site-navigation a {
+   padding-top: 35px;	
    padding-left: 0px;
    padding-right: 30px;
 }
 .site-navigation li:last-child a{
-   padding-left: 50px;
+   padding-left: 105px;
 }
 .site-navigation a:hover,
 .user-navigation a:hover {
@@ -162,32 +180,12 @@ img {
   padding-bottom: 90px;
 }
 .about-us {
-	width: 490px;
+	width: 450px;
 }
 .contacts {
 	width: 550px;
 }
-.about-us h2 {
-  font-size: 47px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.02;
-  letter-spacing: 0.5px;
-  text-align: left;
-  color: #000000;
-}
-.about-us p {
-  font-family: "OpenSans", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #464646;
-}
+.about-us h2,
 .contacts h2 {
   font-size: 47px;
   font-weight: 800;
@@ -198,7 +196,8 @@ img {
   text-align: left;
   color: #000000;
 }
-.contacts p {
+.about-us p,
+.contacts p  {
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -208,6 +207,7 @@ img {
   letter-spacing: normal;
   text-align: left;
   color: #464646;
+  padding-bottom: 20px;
 }
 .about-us ul {
   font-size: 16px;
@@ -223,35 +223,31 @@ img {
 .button-second {
   width: 260px;
   height: 8px;
+  background-color: #f0c52e;
+  box-sizing: border-box;
+  margin-top: 60px;	
   font-size: 18px;
   font-weight: 800;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.33;
-  letter-spacing: 3.6px;
   text-align: center;
-  background-color: #f0c52e;
   letter-spacing: 3.6px;
   text-transform: uppercase;
   color: #000000;
-  box-sizing: border-box;
   position: absolute;
   margin-top: 60px;
   text-align: center;
 }
 .button-first::before {
-	content: "Подробнее о нас"; 
+	content: ""; 
 	position: absolute;
-	top: -7px;
-	bottom: 2px;
-	left: 20px;
+	
 }
 .button-second::before {
-	content: "Напишите нам"; 
+	content: ""; 
 	position: absolute;
-	top: -7px;
-	bottom: 2px;
-	left: 40px;
+
 }
 .button-first:hover {
   width: 220px;
@@ -280,25 +276,63 @@ img {
   display: flex;
   justify-content: space-between; 
 }
+.logo-device-footer path {
+	fill: #ffc600;
+}
+.footer-logo {
+	padding-top: 65px;
+}
+.adress {
+	padding-top: 45px;
+}
+.adress p {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
 .site-navigation-footer,	
 .user-navigation-footer {
    display: flex;
    flex-wrap: wrap;
 }
+.site-navigation-footer {
+   align-items: center;
+   justify-content: center;
+}
 .site-navigation-footer a,	
 .user-navigation-footer a{
-   display: block; 
+   display: block;
    vertical-align: middle;
+}
+.site-navigation-footer a {
+   padding-top: 150px;
+   padding-right: 30px;
+}
+.user-navigation-footer {
+   padding: 0;
+   margin: 0;
+  } 
+.user-navigation-footer a {
+   padding-top: 65px;
+   margin-right: 82px;
+}
+.user-navigation-footer li:last-child a{
+   margin-right: 0px;
 }
 .footer-container-first {
   width: 260px;	
 }
 .footer-container-second {
-  width: 430px;
-}
+  width: 500px;
 }
 .footer-container-third {
-  width: 330px;
+  width: 400px;
 }
 .site-navigation-footer a,
 .user-navigation-footer a {
@@ -329,7 +363,8 @@ img {
   justify-content: space-between;
   width: 145px;
   margin: 0 auto;
-  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 .social-button:hover {
   opacity: 0.6;
@@ -344,6 +379,11 @@ img {
 .site-navigation-footer a:focus {
   color: rgba(255, 255, 255, 0.3);
   opacity: 0.3;
+}
+.exit-footer path,
+.compare-footer path,
+.basket-footer path {
+	fill: #ffc600;
 }
 .user-navigation-footer {
   opacity: 0.7;
@@ -365,16 +405,12 @@ img {
   color: rgba(255, 255, 255, 0.3);
   opacity: 0.3;
 }
-.adress p {
-  font-family: "OpenSans", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #ffffff;
+.phone {
+	display: flex;
+	justify-content: flex-end;
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
 }
 .phone a {
   font-family: "OpenSans", Arial, sans-serif;
@@ -386,6 +422,14 @@ img {
   letter-spacing: normal;
   color: #ffffff;
 }
+.logo-html {
+	display: flex;
+	justify-content: flex-end;
+	padding: 0;
+	margin: 0;
+	padding-top: 50px;
+}
+
 .main-inner {
   width: 1200px;
   margin: auto;
