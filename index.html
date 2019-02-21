@@ -53,15 +53,40 @@
   	  		 <li>Автотрейдинг</li>
   	  		 <li>ЖелДорЭкспедиция</li>
   	  	   </ul>
-            <button class="button-first">Подробнее о нас</button>
+            <a href="#" class="button-first">Подробнее о нас</a>
   	     </section>
   	     <section class="contacts">
   	  	   <h2>Контакты</h2>
   	  	   <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-           <a class="map" href="#">
-  	  	   <img src="img/map.png" width="560" height="222" alt="Адрес магазина г.Москва, ул. Строителей 15.">
-           </a>
-           <button class="button-second">Напишите нам</button>
+           <div class="map-small">
+             <a href="#">
+  	           <img class="map-small" src="img/map.png" width="560" height="222" alt="Адрес магазина г.Москва, ул. Строителей 15.">
+              </a>
+           </div>
+           <div class="map-big">   
+             <a href="#">
+               <img class="map-big" src="img/map-big.jpg" width="960" height="559" alt="Адрес магазина г.Москва, ул. Строителей 15."></a>
+           </div>   
+           <a href="#" class="button-second">Напишите нам</a>
+           <div class="letter">
+             <form action="email" method="post">
+              <div class="name">
+                 <label>Ваше имя:</label>
+                 <input class="input-name" type="text" name="name" placeholder="Имя Фамилия" required>
+              </div>
+              <div class="email">     
+                <label>Ваш e-mail:</label>
+                <input class="input-email" type="text" name="email" placeholder="email@example.com" required>
+              </div> 
+              <div class="text">    
+                <label>Текст письма</label>
+                <textarea name="text" placeholder="В свободной форме"></textarea>
+              </div>  
+              <div class="button-email">
+               <input class="button" type="submit" value="Отправить">
+              </div> 
+            </form>
+           </div>
   	     </section>
       </div>
   	</main>	
