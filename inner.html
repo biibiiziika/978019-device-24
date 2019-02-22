@@ -19,19 +19,13 @@
           <form method="post" action="https://echo.htmlacademy.ru">
             <a href="#"><svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/></svg></a>  
             <input class="search" type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+            <input type="submit" name="search-button" value="Найти" class="search-submit">
           </form>
           <ul class="catalog">
-            <li><a href="#">Каталог товаров<svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/></svg></a></li>  
-              <ul class="catalog-menu">
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-                <li><a href="#">Квадрокоптеры</a></li>
-              </ul> 
-            </ul>
+            <li><a href="#">Каталог товаров<svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/></svg></a></li>
+          </ul>     
          </div>
+
          <div class="container-navigation">
            <nav class="main-navigation">
              <ul class="user-navigation">
@@ -47,7 +41,15 @@
              </ul>  
            </nav> 
           </div> 
-         </div>  
+         </div> 
+       <ul class="catalog-menu">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li class="last-child"><a href="#">Экшн-камеры</a></li>
+              </ul>     
      </header>
   	<main class="main-inner">
        <h1 class="page-title">Моноподы для селфи</h1>
@@ -100,7 +102,7 @@
                 </li>
               </ul>              
             </fieldset>
-            <button type="submit">Показать</button>
+            <button class="button-show" type="submit">Показать</button>
           </form>
          </section>
          <section class="catalog-inner">

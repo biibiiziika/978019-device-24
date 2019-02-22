@@ -19,6 +19,7 @@
   	      <form method="post" action="https://echo.htmlacademy.ru">
             <a href="#"><svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/></svg></a>  
             <input class="search" type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+            <input type="submit" name="search-button" value="Найти" class="search-submit">
           </form>
           <ul class="catalog">
             <li><a href="#">Каталог товаров<svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/></svg></a></li>
@@ -63,32 +64,34 @@
   	           <img class="map-small" src="img/map.png" width="560" height="222" alt="Адрес магазина г.Москва, ул. Строителей 15.">
               </a>
            </div>
-           <div class="map-big">   
+           <div class="map-big">
+              <a class="map-close" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg></a>   
              <a href="#">
                <img class="map-big" src="img/map-big.jpg" width="960" height="559" alt="Адрес магазина г.Москва, ул. Строителей 15."></a>
            </div>   
            <a href="#" class="button-second">Напишите нам</a>
-           <div class="letter">
+  	     </section>
+      </div>
+       <div class="letter">
+             <a class="letter-close" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg></a>
              <form action="email" method="post">
-              <div class="name">
+               <div class="name">
                  <label>Ваше имя:</label>
                  <input class="input-name" type="text" name="name" placeholder="Имя Фамилия" required>
-              </div>
-              <div class="email">     
+              </div> 
+              <div class="email">   
                 <label>Ваш e-mail:</label>
                 <input class="input-email" type="text" name="email" placeholder="email@example.com" required>
-              </div> 
+              </div>
               <div class="text">    
                 <label>Текст письма</label>
-                <textarea name="text" placeholder="В свободной форме"></textarea>
+                <textarea class="letter-textarea" name="text" placeholder="В свободной форме"></textarea>
               </div>  
-              <div class="button-email">
-               <input class="button" type="submit" value="Отправить">
+              <div class="button-letter">
+               <input class="button-email" type="submit" value="Отправить">
               </div> 
             </form>
            </div>
-  	     </section>
-      </div>
   	</main>	
     <footer class="main-footer">
       <div class="wrapper-footer">
