@@ -286,7 +286,9 @@ img {
    width: 480px;
 }
 .description h2,
-.delivery-info h2 {
+.delivery-info h2,
+.guarantee-info h2,
+.credit-info h2 {
    font-size: 47px;
    font-weight: 800;
    font-style: normal;
@@ -297,7 +299,9 @@ img {
    color: #000000;
 }
 .description p,
-.delivery-info p {
+.delivery-info p,
+.guarantee-info p,
+.credit-info p {
    font-family: "OpenSans", Arial, sans-serif;
    font-size: 15px;
    font-weight: 300;
@@ -326,7 +330,7 @@ img {
 	width: 480px;
 	padding-top: 60px;
 }
-.values {
+.values td {
    font-size: 36px;
    font-weight: 300;
    font-style: normal;
@@ -335,7 +339,7 @@ img {
    letter-spacing: 0.4px;
    text-align: left;
 }
-.features {
+.features td {
    font-family: "OpenSans", Arial, sans-serif;
    font-size: 13px;
    font-weight: 300;
@@ -360,6 +364,7 @@ img {
     text-align: left;
     margin: 0;
     padding: 0;
+    position: relative;
  } 
  .popular-items span {
 	width: 160px;
@@ -374,99 +379,104 @@ img {
     height: 55px;
     padding-left: 30px;
 }
-.popular-item-1::before {
+.popular-item::before {
 	content: ""; 
 	position: absolute;
 	width: 160px;
   height: 160px;
 	background-color: rgba(240, 197, 46, 0.5);
 	z-index: -1;
-	left: 140px;
-	top: 830px;
-}
-.popular-item-2::before {
-	content: ""; 
-	position: absolute;
-	width: 160px;
-    height: 160px;
-	background-color: rgba(240, 197, 46, 0.5);
-	z-index: -1;
-	left: 340px;
-	top: 830px;
-}
-.popular-item-3::before {
-	content: ""; 
-	position: absolute;
-	width: 160px;
-    height: 160px;
-	background-color: rgba(240, 197, 46, 0.5);
-	z-index: -1;
-	left: 540px;
-	top: 830px;
-}
-.popular-item-4::before {
-	content: ""; 
-	position: absolute;
-	width: 160px;
-    height: 160px;
-	background-color: rgba(240, 197, 46, 0.5);
-	z-index: -1;
-	left: 740px;
-	top: 830px;
-}
-.popular-item-5::before {
-	content: ""; 
-	position: absolute;
-	width: 160px;
-    height: 160px;
-	background-color: rgba(240, 197, 46, 0.5);
-	z-index: -1;
-	left: 940px;
-	top: 830px;
-}
-.popular-item-6::before {
-	content: ""; 
-	position: absolute;
-	width: 160px;
-    height: 160px;
-	background-color: rgba(240, 197, 46, 0.5);
-	z-index: -1;
-	left: 1140px;
-	top: 830px;
+	left: 0px;
+	top: 0px;
 }
 .wrapper-services {
     margin: auto;
     background-color: #e5e5e5;
     height: 288px;
-    margin-bottom: 50px;
+    margin-top: 170px;
+    margin-bottom: 80px;   
+}
+.service section {
+  display: none;
 }
 .services {
 	  width: 1160px;
     margin: 0 auto;
     padding: 20px;
-    position: relative;
+    position: absolute;
+    left: 80px;
+    top: 1190px;
     display: flex;
     justify-content: space-between;	
-    background-image: url(./img/delivery.svg) no-repeat;
-    background-position: right;
-    background-size: 136px 164px;
 }
 .services-buttons {
-	display: block;
-	width: 310px;
+	 display: block;
+	 width: 310px;
+}
+.delivery-page {
+  display: flex;
+  justify-content: space-between;
+  width: 750px;
 }
 .delivery-info {
 	display: block;
-	width: 500px;  
+	width: 450px;  
 }
 .delivery-img {
 	display: block;
+  background: url(../img/delivery.svg) no-repeat;
+  background-position: bottom;
+  width: 136px;
+  height: 220px;
+}
+.guarantee-page {
+  display: flex;
+  justify-content: space-between;
+  width: 750px;
+  display: none;
+}
+.guarantee-info {
+  display: block;
+  width: 450px;  
+}
+.guarantee-img {
+  display: block;
+  background: url(../img/warranty.svg) no-repeat;
+  background-position: bottom;
+  width: 171px;
+  height: 220px;
+}
+.credit-page {
+  display: flex;
+  justify-content: space-between;
+  width: 750px;
+  display: none;
+}
+.credit-info {
+  display: block;
+  width: 450px;  
+}
+.credit-img {
+  display: block;
+  background: url(../img/credit.svg) no-repeat;
+  background-position: bottom;
+  width: 171px;
+  height: 220px;
 }
 .services-buttons ul {
-	list-style: none;  
+	 list-style: none;  
 }
 .buttons-service li{
-	padding-top: 50px;
+	 padding-top: 50px;
+}
+.services-buttons::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 319px;
+    background-color: #000000;
+    left: 310px;
+    top: -20px;
 }
 .button-delivery,
 .button-guarantee,
@@ -495,8 +505,18 @@ img {
 	background-color: #f0c52e;
 	z-index: -1;
 	left: -25px;
-	top: 25px;
+	top: 8px;
 }
+.button-delivery:hover::before {
+    height: 40px;
+    width: 278px;
+    background-color: #000000;
+    color: #f0c52e;
+    top: -8px;
+} 
+.button-delivery:hover {
+    color: #f0c52e;
+} 
 .button-guarantee::before {
 	content: ""; 
 	position: absolute;
@@ -505,8 +525,18 @@ img {
 	background-color: #f0c52e;
 	z-index: -1;
 	left: -25px;
-	top: 25px;
+	top: 7px;
 }
+.button-guarantee:hover::before {
+    height: 40px;
+    width: 278px;
+    background-color: #000000;
+    color: #f0c52e;
+    top: -7px;
+} 
+.button-guarantee:hover {
+    color: #f0c52e;
+} 
 .button-credit::before {
 	content: ""; 
 	position: absolute;
@@ -515,8 +545,18 @@ img {
 	background-color: #f0c52e;
 	z-index: -1;
 	left: -25px;
-	top: 25px;
+	top: 7px;
 }
+.button-credit:hover::before {
+    height: 40px;
+    width: 278px;
+    background-color: #000000;
+    color: #f0c52e;
+    top: -7px;
+} 
+.button-credit:hover {
+    color: #f0c52e;
+} 
 .partners {
     width: 1160px;
     margin: 0 auto;
@@ -526,22 +566,41 @@ img {
     justify-content: space-between;
     position:relative; 
 }
-.partners img {
-    display: block;
-    position: absolute;
-    margin-right: 20px;   
+.dji-logo {
+  background: url(../img/logo-1.2.jpg);
+  background-size: cover;
+  width: 260px;
+  height: 100px;
 }
-.partners img.first-img {
-  opacity:0;
-  filter:alpha (opacity=0);
+.dji-logo:hover {
+  background: url(../img/logo-1.jpg);
 }
-.partners:hover img.first-img { 
-  opacity:1;
-  filter:alpha (opacity=100);
+.spadgets-logo {
+  background: url(../img/logo-2.2.jpg);
+  background-size: cover;
+  width: 260px;
+  height: 100px;
 }
-.partners:hover img.second-img, .partners img.second-img:hover {
-  opacity:0;
-  filter:alpha (opacity=0);
+.spadgets-logo:hover {
+  background: url(../img/logo-2.jpg);
+}
+.gopro-logo {
+  background: url(../img/logo-3.2.jpg);
+  background-size: cover;
+  width: 260px;
+  height: 100px;
+}
+.gopro-logo:hover {
+  background: url(../img/logo-3.jpg);
+}
+.vive-logo {
+  background: url(../img/logo-4.2.jpg);
+  background-size: cover;
+  width: 260px;
+  height: 100px;
+}
+.vive-logo:hover {
+  background: url(../img/logo-4.jpg);
 }
 .container-about-us {
     width: 1160px;	
@@ -676,6 +735,7 @@ img {
 }
 .button-show:hover::after {
     height: 40px;
+    top: -2px;
 }
 .button-info::after {
     content: ""; 
@@ -693,6 +753,7 @@ img {
 }
 .button-info:hover::after {
     height: 40px;
+    top: -2px;
 }
 .main-footer {
     margin: auto;
