@@ -2,7 +2,7 @@
 	font-family: 'Gilroy';
 	src: url('../fonts/gilroy-extrabold.woff2') format('woff2'),
     url('../fonts/gilroy-extrabold.woff') format('woff');
-    font-weight: 400;			
+    font-weight: 300;			
 }
 @font-face {
 	font-family: 'Gilroy';
@@ -97,6 +97,13 @@ img {
    font-style: normal;
    line-height: 2;
    letter-spacing: 0.2px;
+   display: none;
+}
+input .search:focus {
+  display: block;
+}
+input .search-submit:focus  {
+   display: block;
 }
 .search-submit:hover {
 	background-color: #000000;
@@ -110,8 +117,10 @@ img {
 .container-search form {
 	width: 440px;
   height: 49px;
-  border-bottom: 2px solid #000000; 
   margin-top: -10px;
+}
+.container-search form:focus {
+  border-bottom: 2px solid #000000; 
 }
 .container-search a{
 	color: #000000;
@@ -387,7 +396,7 @@ img {
 	margin-top: 140px;
 }
 .values td {
-   font-family: "Gilroy-Light", Arial, sans-serif;
+   font-family: "Gilroy", Arial, sans-serif;
    font-size: 36px;
    font-weight: 300;
    font-style: normal;
@@ -1153,6 +1162,16 @@ img {
     width: 270px;
     background-color: #ebebeb;
 }
+.filters::before {
+  content: ""; 
+  position: absolute;
+  width: 460px;
+  height: 1300px;
+  background-color: #ebebeb;
+  z-index: -1;
+  left: 0px;
+  top: 585px;
+}
 .filters h2 {
 	  font-size: 16px;
     font-weight: 800;
@@ -1170,6 +1189,16 @@ img {
     margin-top: 0px;
     text-align: left;
     line-height: 71px;
+}
+.filters h2::before {
+  content: ""; 
+  position: absolute;
+  width: 460px;
+  height: 70px;
+  background-color: #d9d9d9;
+  z-index: -1;
+  left: 0px;
+  top: 516px;
 }
 input[type=range]
 {
