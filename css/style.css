@@ -66,6 +66,7 @@ img {
    opacity: 0.3;
 }
 .search {
+   display: block;
    background-color: transparent;
    border: none; 
    outline: none;
@@ -78,18 +79,19 @@ img {
    opacity: 0.3;
    padding-right: 154px;
 }
-.search:hover {
-   opacity: 0.6;
+ .search:hover {
+   color: rgba(0, 0, 0, 0.6); 
 }
 .search:focus {
    color: #000000;
+   border-bottom: 2px solid #000000; 
 }
 .search-submit {
+   display: block;
    width: 85px;
    height: 49px;	
    background-color: transparent;
-   border: 2px solid #000000; 
-   border-bottom: none; 
+   border: 2px solid #000000;  
    outline: none;
    font-family: "OpenSans", Arial, sans-serif;	
    font-size: 15px;
@@ -98,6 +100,7 @@ img {
    line-height: 2;
    letter-spacing: 0.2px;
    display: none;
+   margin: 0px;
 }
 .search:focus + .search-submit {
   display: block;
@@ -112,6 +115,7 @@ img {
 	opacity: 0.3;
 }
 .container-search form {
+  display: flex;
 	width: 440px;
   height: 49px;
   margin-top: -10px;
@@ -199,6 +203,9 @@ img {
 .header-svg,
 .footer-svg {
 	padding-right: 10px; 
+}
+.container-search .header-svg {
+  margin-top: 15px;
 }
 .catalog .header-svg {
 	opacity: 0.3;
@@ -1172,6 +1179,14 @@ img {
     list-style: none;
     color: rgba(0, 0, 0, 0.3);
     padding-right: 15px;
+}
+.breadcrumbs li::after {
+   content: ""; 
+   background-image: url('../img/nav-arrow.svg');
+   background-size: 4px 7px;
+   width: 4px;
+   height: 7px;
+   z-index: 2;
 }
 .breadcrumbs a:hover {
     color: rgba(0, 0, 0, 0.6);
