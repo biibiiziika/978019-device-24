@@ -1753,6 +1753,9 @@ input[type=range]::-webkit-slider-runnable-track {
     padding-top: 20px;
     outline:none;    
 }
+.modal-show {
+  display: block;
+}
 .modal-map {
   top: 50%;
   left: 50%;
