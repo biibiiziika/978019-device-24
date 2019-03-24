@@ -10,7 +10,7 @@
   <body>
   	<header class="main-header">
       <div class="header-logo">
-        <a>
+        <a href="index.html">
           <img class="logo-header" src="img/logo-device.svg" width="163" height="65" alt="Логотип сайта">
         </a>
       </div>
@@ -22,7 +22,16 @@
             <input type="submit" name="search-button" value="Найти" class="search-submit">
           </form>
           <ul class="catalog">
-            <li><a href="#">Каталог товаров<svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/></svg></a></li>
+            <li><a href="#">Каталог товаров<svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/></svg></a>
+              <ul class="catalog-menu">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li class="last-child"><a href="#">Экшн-камеры</a></li>
+              </ul> 
+            </li>
           </ul>     
          </div>
 
@@ -42,14 +51,7 @@
            </nav> 
           </div> 
          </div> 
-       <ul class="catalog-menu">
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Квадрокоптеры</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
-                <li><a href="#">Умные часы</a></li>
-                <li class="last-child"><a href="#">Экшн-камеры</a></li>
-              </ul>     
+           
      </header>
   	<main class="main-inner">
        <h1 class="page-title">Моноподы для селфи</h1>
@@ -64,28 +66,28 @@
              <form class="filter" method="get" action="https://echo.htmlacademy.ru">
              <fieldset>
                <legend>Стоимость</legend>
-               <input class="price" type="range" min="0" max="10" step="1" value="50" list="rangeList1">
+               <input class="price" type="range" multiple min="0" max="10" step="1" value="50" list="rangeList1">
                <legend>Цвет</legend>
                <ul class="colors-choice">
                  <li class="filter-color">
                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" checked>
-                   <img class="color" src="img/checkbox-on.svg"> Черный   
+                   <img class="color" src="img/checkbox-on.svg" alt="черный" width="27" height="23"> Черный   
                  </li>
                  <li class="filter-color">
                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white">
-                   <img class="color" src="img/checkbox-off.svg">Белый  
+                   <img class="color" src="img/checkbox-off.svg" alt="белый" width="23" height="23">Белый  
                  </li>
                  <li class="filter-color">
                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" checked>
-                   <img class="color" src="img/checkbox-on.svg">Синий  
+                   <img class="color" src="img/checkbox-on.svg" alt="синий" width="27" height="23">Синий  
                  </li>
                  <li class="filter-color">
                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" checked>
-                   <img class="color" src="img/checkbox-on.svg">Красный  
+                   <img class="color" src="img/checkbox-on.svg" alt="красный" width="27" height="23">Красный  
                  </li>
                  <li class="filter-color">
                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink">
-                   <img class="color" src="img/checkbox-off.svg">Розовый 
+                   <img class="color" src="img/checkbox-off.svg" alt="розовый" width="23" height="23">Розовый 
                  </li>
                </ul>   
              </fieldset>
@@ -94,12 +96,12 @@
               <ul class="bluetooth">
                 <li class="bluetooth-choice">
                   <label for="bluetooth-choice-yes"></label>
-                  <img class="radio" src="img/radio-on.svg">
+                  <img class="radio" src="img/radio-on.svg" alt="есть" width="25" height="25">
                   <input type="radio" id="bluetooth-choice-yes" name="bluetooth" value="yes">Есть   
                 </li>
                 <li class="bluetooth-choice">
                   <label for="bluetooth-choice-no"></label>
-                  <img class="radio" src="img/radio-off.svg">
+                  <img class="radio" src="img/radio-off.svg" alt="нет" width="25" height="25">
                   <input type="radio" id="bluetooth-choice-no" name="bluetooth" value="no">Нет
                 </li>
               </ul>              
@@ -116,7 +118,7 @@
                <li>По популярности</li>   
              </ul>
              <div class="arrows">
-               <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
+               <a href="#" class="arrow-active"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
              </div>
           </div>  
@@ -133,7 +135,7 @@
                   <span>500 руб.</span>
                   <div class="product-selected">
                     <a href="#">
-                      <button class="button-basket" type="submit">В корзину</button>
+                      <input class="button-basket" type="submit" value="В корзину">
                     </a>
                     <a href="#">
                       <span class="matching">Добавить к сравнению</span>
@@ -144,7 +146,7 @@
               <li class="catalog-item">
                 <article class="product">
                   <a href="catalog-item.html">
-                    <img src="img/item-2.jpg" width="360" height="380 alt="Профессиональная селфи-палка">
+                    <img src="img/item-2.jpg" width="360" height="380" alt="селфи-палка">
                   </a>  
                   <h1>
                     <a href="catalog-item.html">Профессиональная селфи-палка</a>
@@ -152,7 +154,7 @@
                   <span>1 500 руб.</span>
                   <div class="product-selected">
                     <a href="#">
-                      <button class="button-basket" type="submit">В корзину</button>
+                      <input class="button-basket" type="submit" value="В корзину">
                     </a>
                     <a href="#">
                       <span class="matching">Добавить к сравнению</span>
@@ -163,7 +165,7 @@
               <li class="catalog-item">
                 <article class="product">
                   <a href="catalog-item.html">
-                    <img src="img/item-3.jpg" width="360" height="380 alt="Непотопляемая селфи-палка">
+                    <img src="img/item-3.jpg" width="360" height="380" alt="селфи-палка">
                   </a>
                   <h1>
                     <a href="catalog-item.html">Непотопляемая селфи-палка</a>
@@ -171,7 +173,7 @@
                   <span>2 500 руб.</span>
                   <div class="product-selected">
                     <a href="#">
-                      <button class="button-basket" type="submit">В корзину</button>
+                      <input class="button-basket" type="submit" value="В корзину">
                     </a>
                     <a href="#">
                       <span class="matching">Добавить к сравнению</span>
@@ -182,7 +184,7 @@
               <li class="catalog-item">
                 <article class="product">
                   <a href="catalog-item.html">
-                    <img src="img/item-4.jpg" width="360" height="380 alt="Селфи-палка "Следуй за мной"">
+                    <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка">Следуй за мной>
                   </a> 
                   <h1>
                     <a href="catalog-item.html">Селфи-палка "Следуй за мной"</a>
@@ -192,7 +194,7 @@
                   <span class="new">new</span>
                   <div class="product-selected">
                     <a href="#">
-                      <button class="button-basket" type="submit">В корзину</button>
+                      <input class="button-basket" type="submit" value="В корзину">
                     </a>
                     <a href="#">
                       <span class="matching">Добавить к сравнению</span>
@@ -250,7 +252,7 @@
           </div>
           <div class="logo-html">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/logo-html.svg">
+              <img src="img/logo-html.svg" alt="лого-академии" width="27" height="35">
             </a>   
           </div>
       </div>    
